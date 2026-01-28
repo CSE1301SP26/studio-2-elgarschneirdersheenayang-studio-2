@@ -28,8 +28,15 @@ public class Ruin {
         int winCount = 0;
         int lossCount = 0;
 
-        // simulate totalSimulation number of games print each one
+        //Ruin rate caclulation
+        if (winChance == 0.5){
+            System.out.println("Expected ruin is: " + (1 - (startAmount/winLimit))); 
+        }
+        else{
+            //Needs to code the otherwise but everything else is done
+        }
 
+        // simulate totalSimulation number of games print each one
         while (x <= totalSimulation) {
 
             // play until success or ruin
